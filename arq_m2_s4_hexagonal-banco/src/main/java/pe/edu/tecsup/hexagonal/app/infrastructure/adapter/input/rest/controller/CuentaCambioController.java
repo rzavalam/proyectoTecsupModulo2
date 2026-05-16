@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import pe.edu.tecsup.hexagonal.app.application.port.input.ConsultarSaldoUseCase;
 import pe.edu.tecsup.hexagonal.app.application.port.input.CrearCuentaUseCase;
 import pe.edu.tecsup.hexagonal.app.application.port.input.TransferirDineroUseCase;
+import pe.edu.tecsup.hexagonal.app.domain.exception.ClienteNoExisteException;
 import pe.edu.tecsup.hexagonal.app.domain.exception.CuentaNoEncontradaException;
 import pe.edu.tecsup.hexagonal.app.domain.exception.DatosCuentaInvalidosException;
 import pe.edu.tecsup.hexagonal.app.domain.exception.SaldoInsuficienteException;
@@ -32,7 +33,7 @@ public class CuentaCambioController {
     private final CuentaMapper mapper;
 
     @PostMapping
-    public ResponseEntity<CuentaResponse> crearCuenta(
+    public ResponseEntity<Object> crearCuenta(
             @RequestBody CrearCuentaRequest request) {
 
         try {
@@ -41,6 +42,15 @@ public class CuentaCambioController {
             log.info("Cuenta creada correctamente con ID: {}",nuevaCuenta.getCuentaId());
 
             return ResponseEntity.status(HttpStatus.CREATED).body(mapper.toResponse(nuevaCuenta));
+
+        }catch (ClienteNoExisteException e) {
+            log.warn("Datos inválidos para crear cuenta: {}", e.getMessage());
+
+            log.warn("Datos inválidos para crear cuenta: {}", e.getMessage());
+
+            return ResponseEntity
+                    .badRequest()
+                    .body("El cliente no existe");
 
         } catch (DatosCuentaInvalidosException e) {
             log.warn("Datos inválidos para crear cuenta: {}",e.getMessage());

@@ -1,0 +1,60 @@
+2026-05-15 20:18:33.701981-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "CUENTE" no encontrada
+Table "CUENTE" not found; SQL statement:
+delete cuente where cliente_id='CLI001' [42102-232]
+2026-05-15 20:19:24.843051-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""
+Syntax error in SQL statement "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""; SQL statement:
+select * from cuenta
+
+delete cuenta where cliente_id="CLI001" [42000-232]
+2026-05-15 20:20:01.675239-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""
+Syntax error in SQL statement "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""; SQL statement:
+select * from cuenta
+
+delete cuenta where cliente_id="CLI001" [42000-232]
+2026-05-15 20:20:03.791127-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""
+Syntax error in SQL statement "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""; SQL statement:
+select * from cuenta
+
+delete cuenta where cliente_id="CLI001" [42000-232]
+2026-05-15 20:20:05.163891-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""
+Syntax error in SQL statement "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""; SQL statement:
+select * from cuenta
+
+delete cuenta where cliente_id="CLI001" [42000-232]
+2026-05-15 20:20:07.305494-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""
+Syntax error in SQL statement "select * from cuenta\000d\000a\000d\000adelete [*]cuenta where cliente_id=""CLI001"""; SQL statement:
+select * from cuenta
+
+delete cuenta where cliente_id="CLI001" [42000-232]
+2026-05-15 20:20:39.768553-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "select * from cuenta\000d\000a\000d\000adelete [*]from cuenta where cuenta_id='CTA006'"
+Syntax error in SQL statement "select * from cuenta\000d\000a\000d\000adelete [*]from cuenta where cuenta_id='CTA006'"; SQL statement:
+select * from cuenta
+
+delete from cuenta where cuenta_id='CTA006' [42000-232]
+2026-05-15 20:25:26.764446-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"
+Syntax error in SQL statement "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"; SQL statement:
+SELECT * FROM CLIENTE
+SELECT * FROM CUENTA [42000-232]
+2026-05-15 20:26:00.089577-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"
+Syntax error in SQL statement "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"; SQL statement:
+SELECT * FROM CLIENTE
+SELECT * FROM CUENTA [42000-232]
+2026-05-15 20:27:03.786491-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"
+Syntax error in SQL statement "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"; SQL statement:
+SELECT * FROM CLIENTE
+SELECT * FROM CUENTA [42000-232]
+2026-05-15 20:27:28.761618-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"
+Syntax error in SQL statement "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"; SQL statement:
+SELECT * FROM CLIENTE
+SELECT * FROM CUENTA [42000-232]

@@ -21,4 +21,5 @@ public class CuentaResponse {
     private String estado;
     private LocalDateTime fechaCreacion;
     private LocalDateTime fechaActualizacion;
+
 }

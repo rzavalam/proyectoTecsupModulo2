@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 import pe.edu.tecsup.hexagonal.app.application.port.input.CrearCuentaUseCase;
 import pe.edu.tecsup.hexagonal.app.application.port.output.ClienteRepositoryPort;
 import pe.edu.tecsup.hexagonal.app.application.port.output.CuentaRepositoryPort;
+import pe.edu.tecsup.hexagonal.app.domain.exception.ClienteNoExisteException;
 import pe.edu.tecsup.hexagonal.app.domain.exception.DatosCuentaInvalidosException;
 import pe.edu.tecsup.hexagonal.app.domain.model.Cliente;
 import pe.edu.tecsup.hexagonal.app.domain.model.Cuenta;
@@ -34,11 +35,7 @@ public class CrearCuentaUseCaseImpl implements CrearCuentaUseCase {
         Cliente cliente =
                 clienteRepositoryPort
                         .buscarPorId(clienteId)
-                        .orElseThrow(() ->
-                                new RuntimeException(
-                                        "Cliente no encontrado"
-                                )
-                        );
+                        .orElseThrow(ClienteNoExisteException::new);
 
         if (saldoInicial == null || saldoInicial.compareTo(BigDecimal.ZERO) < 0) {
             throw new DatosCuentaInvalidosException();

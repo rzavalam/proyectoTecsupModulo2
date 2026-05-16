@@ -58,3 +58,7 @@ org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SEL
 Syntax error in SQL statement "SELECT * FROM CLIENTE\000d\000a[*]SELECT * FROM CUENTA"; SQL statement:
 SELECT * FROM CLIENTE
 SELECT * FROM CUENTA [42000-232]
+2026-05-15 21:34:19.978463-05:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]selec * from cuenta"; se esperaba "SAVEPOINT, SCRIPT, SHUTDOWN"
+Syntax error in SQL statement "[*]selec * from cuenta"; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+selec * from cuenta [42001-232]
